@@ -41,6 +41,6 @@ function hoursWorkedOnDate(obj, date) {
 }
 
 function wagesEarnedOnDate(obj, date) {
-  let pay = hoursWorkedOnDate(obj, date) * obj.payPerHour;
-  return parseInt(pay);
+  let payM = hoursWorkedOnDate(obj, date) * obj.payPerHour;
+  return parseInt(payM);
 }
