@@ -23,3 +23,13 @@ function createEmployeeRecord (row) {
    })
    return obj;
  }
+
+function createTimeOutEvent(obj, fullDate) {
+  let [date, hour] = fullDate.split('')
+  obj.timeOutEvents.push({
+    type: "TimeOut",
+    date,
+    hour: parseInt(hour)
+  })
+  return obj
+}
