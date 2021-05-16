@@ -39,3 +39,8 @@ function hoursWorkedOnDate(obj, date) {
   let timeOut = obj.timeOutEvents.find(e => e.date === date);
   return ( timeOut.hour - timeIn.hour) / 100;
 }
+
+function wagesEarnedOnDate(obj, date) {
+  let pay = hoursWorkedOnDate(obj, date) * obj.payPerHour;
+  return parseInt(pay);
+}
