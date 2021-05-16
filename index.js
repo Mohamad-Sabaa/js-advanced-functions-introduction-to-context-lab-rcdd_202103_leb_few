@@ -13,3 +13,13 @@ function createEmployeeRecord (row) {
  function createEmployeeRecords(data) {
    return data.map(row => createEmployeeRecord(row))
  }
+
+ function createTimeInEvent(obj, fullDate) {
+   let [date, hour] = fullDate.split(' ')
+   obj.timeInEvents.push({
+     type: 'timeIn',
+     date,
+     hour: parseInt(hour)
+   })
+   return obj;
+ }
