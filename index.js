@@ -25,7 +25,7 @@ function createEmployeeRecord (row) {
  }
 
 function createTimeOutEvent(obj, fullDate) {
-  let [date, hour] = fullDate.split('')
+  let [date, hour] = fullDate.split(' ')
   obj.timeOutEvents.push({
     type: "TimeOut",
     date,
